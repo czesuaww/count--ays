@@ -37,6 +37,8 @@ body {
     &-settingsBtn {
       position: absolute;
       visibility: hidden;
+      border-radius: 5px;
+
       top: 20px;
       right: 20px;
       padding: 10px 20px;
