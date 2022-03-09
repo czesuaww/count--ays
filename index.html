@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czasoodliczator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ce1ab2aef5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="counterAppWrapper">
+      <div class="appBody">
+        <div class="appBody__imageSection">
+          <button class="appBody__imageSection-settingsBtn"><i class="fas fa-sliders-h"></i></button>
+        </div>
+
+        <div class="appBody__timeSection">
+          <h3 class="appBody__timeSection-heading"><span class="appBody__timeSection-heading-event">Stag party</span> in:</h3>
+          <div class="appBody__timeSection-timeCards">
+            <div class="appBody__timeSection-timeCards-card">
+              <p class="appBody__timeSection-timeCards-card-daysCount number">1</p>
+              <p class="appBody__timeSection-timeCards-card-cardTitle">Days</p>
+            </div>
+            <div class="appBody__timeSection-timeCards-card">
+              <p class="appBody__timeSection-timeCards-card-hoursCount number">1</p>
+              <p class="appBody__timeSection-timeCards-card-cardTitle">Hours</p>
+            </div>
+            <div class="appBody__timeSection-timeCards-card">
+              <p class="appBody__timeSection-timeCards-card-minutesCount number">1</p>
+              <p class="appBody__timeSection-timeCards-card-cardTitle">Minutes</p>
+            </div>
+            <div class="appBody__timeSection-timeCards-card">
+              <p class="appBody__timeSection-timeCards-card-secondsCount number">1</p>
+              <p class="appBody__timeSection-timeCards-card-cardTitle">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings">
+        <h1 class="settings__heading">settings</h1>
+        <label for="event-name">The name of the event:</label>
+        <input type="text" id="event-name" value="Stag night" />
+        <table class="date">
+          <tr>
+            <td><label for="event-day">Day:</label></td>
+            <td><label for="event-month">Month:</label></td>
+            <td><label for="event-year">Year:</label></td>
+          </tr>
+          <tr>
+            <td><input type="number" id="event-day" maxlength="2" value="30" /></td>
+            <td><input type="number" id="event-month" maxlength="2" value="7" /></td>
+            <td><input type="number" id="event-year" maxlength="4" value="2022" /></td>
+          </tr>
+        </table>
+
+        <label for="event-image">Link to picture:</label>
+        <input type="text" id="event-image" value="/img/stagPlace.jpg" />
+        <button class="settings__save">Save</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
