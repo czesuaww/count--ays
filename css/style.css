@@ -45,12 +45,13 @@ body {
 .appBody__imageSection {
   position: relative;
   height: 400px;
-  background-image: url("/img/stagPlace.jpg");
+  background-image: url("./img/stagPlace.jpg");
   background-position: center;
 }
 
 .appBody__imageSection-settingsBtn {
   position: absolute;
+  border-radius: 5px;
   top: 20px;
   right: 20px;
   padding: 10px 20px;
